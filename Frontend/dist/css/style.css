@@ -1,0 +1,531 @@
+/* === Fonts === */
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url('../font/Gilroy-Light.otf');
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url('../font/Gilroy-ExtraBold.otf');
+}
+
+
+/* === Main === */
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    padding-left: 100px;
+}
+
+
+.nav {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+svg {
+    color: white;
+    transition: 0.3s;
+}
+
+.none {
+    visibility: hidden;
+}
+
+.social {
+    display: inline-block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-right: 1rem;
+    font-size: 2.1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.social-info {
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline;
+    padding-right: 20px;
+}
+
+.vertical-align {
+    padding-bottom: 50px;
+}
+
+
+
+/* Icons */
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-instagram:hover {
+    color: #cd486b;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.social-icon-info {
+    font-size: 4.2rem;
+}
+
+.side-nav {
+    position: fixed;
+    top: 50vh;
+    left: -20em;
+    transform: rotate(-90deg);
+    transform-origin: 50% top 0;
+    float: left;
+}
+
+.link-side-nav {
+    font-family: "Gilroy-Light";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+}
+
+.nav-link {
+    font-family: "Gilroy-Light";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+.link-side-nav:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.link-side-nav.active {
+    font-family: "Gilroy-Bold";
+    font-weight: 600;
+}
+
+.link-side-nav:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 3px;
+    height: 1rem;
+    background-color: #FFF;
+}
+
+.paragraphe {
+    position: relative;
+    width: 720px;
+}
+
+.texte-programme {
+    margin-top: 30vh;
+}
+
+.programme {
+    position: relative;
+    font-size: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 1.8em;
+    font-family: "Gilroy-Bold";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titre-programme {
+    position: absolute;
+    background-image: url("../img/programme_2018.png");
+    left: 13%;
+    top: 10vh;
+    height: 41px;
+    width: 589px;
+}
+
+.titre-infos {
+    position: absolute;
+    margin-top: 12vh;
+    background-image: url("../img/infos.png");
+    height: 45px;
+    width: 478px;
+}
+
+.texte-programme span {
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: 98%;
+    font-family: "Gilroy-Bold";
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.contact {
+    margin-top: 30vh;
+    margin-left: 15vw;
+    margin-bottom: 5vh;
+}
+
+.contact p {
+    display: inline;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Gilroy-Bold";
+    margin-top: 0.8em;
+    font-size: 1.9rem;
+}
+
+.date {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/2018.png");
+    background-repeat: no-repeat;
+    background-size: 115% auto;
+    background-position: -1rem 50vh;
+    height: 100vh;
+}
+
+.hacker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/hacker-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    background-size: contain;
+}
+
+.textContainer {
+    z-index: 1000;
+    position: relative;
+    text-align: left;
+    font-family: "Gilroy-Bold";
+    font-size: 6.5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.20vw;
+    line-height: 1.05;
+    min-height: 88vh;
+    text-transform: uppercase;
+    padding-left: 6rem;
+}
+
+.jstext {
+    padding-top: 20vh;
+    padding-right: 50px;
+}
+
+.jstext:after {
+    content: "_";
+    animation: sliding 2s 0.3s 1 forwards, blinking 2s 2s infinite forwards;
+    -webkit-animation: sliding 2s 0.3s 1 forwards, blinking 2s 2s infinite forwards;
+    -moz-animation: sliding 2s 0.3s 1 forwards, blinking 2s 2s infinite forwards;
+    -o-animation: sliding 2s 0.3s 1 forwards, blinking 2s 2s infinite forwards;
+    -webkit-transform: translate(10%, -10%);
+    -moz-transform: translate(10%, -10%);
+    -ms-transform: translate(10%, -10%);
+    transform: translate(10%, -10%);
+    overflow: hidden;
+    width: 0px;
+}
+
+.jstext:before {
+    left: -15%;
+    top: 19vh;
+    position: absolute;
+    content: ">:";
+}
+
+#brName {
+    display: none;
+}
+
+.histoire {
+    max-height: 50vh;
+    font-size: 1.5rem;
+    font-family: "Gilroy-Light";
+    margin-top: 150px;
+    text-transform: uppercase;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.text-construction {
+    display: block;
+    position: absolute;
+    top: 20vmax;
+    width: 100%;
+    transform: translateY(-50%);
+    font-family: "Gilroy-Bold";
+    margin-top: 0.8em;
+    font-size: 5rem;
+}
+
+
+/* === Default & Glitch === */
+
+.screen {
+    position: relative;
+    z-index: 1;
+    widht: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.figure {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-top: 200px solid #fff;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+.figure:before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 99;
+    width: 0;
+    height: 0;
+    top: -194px;
+    left: -90px;
+    margin: auto;
+    border-top: 180px solid #111;
+    border-right: 90px solid transparent;
+    border-left: 90px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+.figure-mask {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-top: 200px solid transparent;
+    border-right: 100px solid #111;
+    border-left: 100px solid #111;
+    border-bottom: 0 solid transparent;
+}
+
+.clock {
+    color: #fff;
+    font-weight: 700;
+    font-family: "Gilroy-Bold";
+    display: block;
+    z-index: 9;
+    width: 1080px;
+    height: 128px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    cursor: default;
+}
+
+.clock span {
+    display: block;
+    position: relative;
+    font-size: 128px;
+    line-height: 1;
+}
+
+.clock.is-off {
+    -webkit-animation: is-off 2s linear infinite !important;
+    animation: is-off 2s linear infinite !important;
+}
+
+.glitch .figure,
+.glitch .figure-mask {
+    -webkit-transform: skewX(0deg) scaleY(1);
+    transform: skewX(0deg) scaleY(1);
+    -webkit-animation: tr-bag 4s linear infinite;
+    animation: tr-bag 4s linear infinite;
+}
+
+.glitch .clock {
+    -webkit-transform: skewX(0deg) scaleY(1);
+    transform: skewX(0deg) scaleY(1);
+    -webkit-animation: clock-bag 4s linear infinite;
+    animation: clock-bag 4s linear infinite;
+}
+
+.glitch .clock span:before,
+.glitch .clock span:after {
+    display: block;
+    content: attr(data-time);
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background: #111;
+    overflow: hidden;
+    width: 720px;
+    height: 128px;
+    clip: rect(0, 900px, 0, 0);
+}
+
+.glitch .clock span:before {
+    left: -2px;
+    text-shadow: 2px 0 #00f;
+    animation: c2 1s infinite linear alternate-reverse;
+    width: 100%;
+}
+
+.glitch .clock span:after {
+    left: 3px;
+    text-shadow: -2px 0 #f00;
+    animation: c1 2s infinite linear alternate-reverse;
+}
+
+
+@media (min-width: 700px) {
+    .hiddenordi {
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    p {
+        font-size: 0.10px;
+    }
+    .paragraphe {
+        width: 350px;
+    }
+
+    .height-responsive {
+      height: 37vh;
+    }
+
+    .date {
+        background-size: 70% auto;
+        font-size: 2rem;
+        background-position: 1rem 21vh;
+        margin-top: 7vh;
+        background-position-x: center;
+    }
+
+    .hiddentel {
+        visibility: hidden;
+    }
+
+    .color {
+        background-color: rgba(51, 51, 51, 0.89) !important;
+    }
+
+    .jstext:before {
+        left: -10%;
+        top: 15vh;
+    }
+
+    .jstext {
+        padding-top: 15vh;
+        padding-right: 100px;
+        left: 15%;
+        font-size: 2.4rem;
+    }
+    .textContainer {
+        padding-right: auto;
+        font-size: 1.2rem;
+        padding-left: 0;
+        min-height: 64px;
+    }
+
+    .main {
+        padding-left: 0px;
+    }
+
+    .histoire {
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
+
+    .clock {
+      width: auto;
+    }
+
+    .clock span {
+        font-size: 40px;
+    }
+
+    .titre-infos {
+        background-size: 50%;
+        background-repeat: no-repeat;
+        margin-left: 9vh;
+        margin-top: 6vh;
+    }
+
+    .social-icon-info {
+        font-size: 2rem;
+        padding-right: 10px;
+    }
+
+    .contact p {
+        font-size: 1.2rem;
+    }
+
+    .fa-6x {
+        font-size: 2em;
+    }
+    .social-info {
+        margin-top: 3vh;
+        margin-left: 9vh;
+    }
+
+    .maps {
+        width: 100%;
+        margin-right: 10px;
+        margin-left: 25px;
+    }
+    .dispnone {
+        display: none;
+    }
+
+    .contact {
+        margin-top: 15vh;
+        margin-left: 0vw;
+        margin-bottom: 5vh;
+    }
+}

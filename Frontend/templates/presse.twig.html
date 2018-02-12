@@ -1,0 +1,25 @@
+<!-- Title -->
+    <div class="row justify-content-center">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="text-construction">EN CONSTRUCTION</div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <script type="text/javascript">
+        $( function() {
+          $( ".text-construction" ).mgGlitch({
+            destroy : false, // set 'true' to stop the plugin
+            glitch: true, // set 'false' to stop glitching
+            scale: true, // set 'false' to stop scaling
+            blend : true, // set 'false' to stop glitch blending
+            blendModeType : 'hue', // select blend mode type
+            glitch1TimeMin : 100, // set min time for glitch 1 elem
+            glitch1TimeMax : 400, // set max time for glitch 1 elem
+            glitch2TimeMin : 45, // set min time for glitch 2 elem
+            glitch2TimeMax : 52, // set max time for glitch 2 elem
+            zIndexStart : 8, // because of absolute position, set z-index base value
+          });
+        });
+    </script>

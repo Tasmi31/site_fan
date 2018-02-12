@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+.slide-container {
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color:white;
+
+  top:25vh;
+  margin: auto;
+  width: 1200px;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wrapper:focus {
+  outline: 0;
+}
+
+.wrapper:hover .clash-card__image {
+  opacity: 0.5;
+}
+
+.wrapper:hover .text {
+  top: 55%;
+}
+
+.wrapper:hover .clash-card__unit-description {
+  opacity: 1;
+}
+
+.clash-card {
+  width: 230px;
+  height: 546px;
+  margin: auto;
+  position: relative;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.clash-card__image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  height: 450px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  transition: 0.5s;
+}
+
+.clash-card__level {
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.clash-card__unit-name {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.clash-card__unit-name span {
+  font-weight: 900;
+}
+
+.clash-card__unit-description {
+  margin-bottom: 10px;
+}
+
+.text {
+  position:absolute;
+  top: 470px;
+  transition: 0.8s;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text .clash-card__unit-description {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px; 
+    background-color:white;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 8px;
+}
+
+.circle svg {
+  color:black;
+  width: 100% !important;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+
+
+
+/******** ATELIER **********/
+
+.card-block {
+    max-width: 100vw;
+    width: 410px;
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+
+.card-block:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.card-title {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.text_atelier {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 15px;
+}
+
+.card-desc {
+    text-align: justify;
+}

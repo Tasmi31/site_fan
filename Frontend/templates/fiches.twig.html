@@ -1,0 +1,53 @@
+  <div class="slide-container">
+
+    {% for etudiant in etudiants %}
+      <div class="wrapper">
+        <div class="clash-card">
+          <div class="clash-card__image clash-card__image--barbarian" style="background-image: url('dist/img/etudiants/{{etudiant.nom|lower}}-{{etudiant.prenom|lower}}.jpg');">
+          </div>
+
+          <div class="text">
+            <div class="clash-card__unit-name"><span>{{etudiant.prenom}}</span> {{etudiant.nom}}</div>
+            <div class="clash-card__level clash-card__level--barbarian">
+
+              {% if etudiant.linkname1 != null %}
+              <a target=”_blank” href="{{ etudiant.link1 }}" class="circle"><i class="{{ etudiant.linkname1 }}"></i></a>
+              {% endif %}
+              {% if etudiant.linkname2 != null %}
+              <a target=”_blank” href="{{ etudiant.link2 }}" class="circle"><i class="{{ etudiant.linkname2 }}"></i></a>
+              {% endif %}
+              {% if etudiant.linkname3 != null %}
+              <a target=”_blank” href="{{ etudiant.link3 }}" class="circle"><i class="{{ etudiant.linkname3 }}"></i></a>
+              {% endif %}
+              {# <span class="circle"><i class="fab fa-twitter"></i></span>
+              <span class="circle"><i class="fab fa-instagram"></i></span>
+              <span class="circle"><i class="far fa-envelope"></i></span> #}
+            </div>
+            <div class="clash-card__unit-description">
+              {{etudiant.description}} 
+            </div>
+          </div>
+        </div> <!-- end clash-card barbarian-->
+      </div> <!-- end wrapper -->
+    {% endfor %}
+  </div> <!-- end container -->
+
+  <script type="text/javascript">
+    (function() {
+      
+      var slideContainer = $('.slide-container');
+      slideContainer.slick({
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        accessibility : true,
+        autoplay : false,
+        cssEase : 'ease-in-out',
+        easing:'swing',
+        mobileFirst:true
+      });
+      
+    })();
+  </script>
+  
+</body>
+</html>

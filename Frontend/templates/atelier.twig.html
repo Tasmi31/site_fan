@@ -1,0 +1,39 @@
+<div class="slide-container">
+
+  {% for atelier in ateliers %}
+    <div class="wrapper">
+        <div class="clash-card card-block">
+            <div class="clash-card__image clash-card__image--barbarian card-img" style="background-image: url('dist/img/ateliers/{{atelier.nom|lower}}.png');">
+            </div>
+            <div class="text text_atelier">
+                <div class="clash-card__unit-name card-title">{{atelier.nom|capitalize}}</div>
+                <div class="clash-card__level clash-card__level--barbarian">
+                </div>
+                <div class="clash-card__unit-description card-desc">
+                    {{atelier.description}}
+                </div>
+            </div>
+        </div><!-- end clash-card barbarian-->
+    </div><!-- end wrapper -->
+  {% endfor %}
+</div><!-- end container -->
+
+  <script type="text/javascript">
+    (function() {
+      
+      var slideContainer = $('.slide-container');
+      slideContainer.slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        accessibility : true,
+        autoplay : false,
+        cssEase : 'ease-in-out',
+        easing:'swing',
+        mobileFirst:true
+      });
+      
+    })();
+  </script>
+  
+</body>
+</html>
