@@ -56,7 +56,7 @@
 	// --- Vars
 		const doneURL = 'http://mickaelgomez.com/side-projects/fan/'
 		const apikey = {
-			key: "w4KdZYeevthjWBbszE4f",
+			key: "hiddenApiKey",
 			error: "Erreur : L'api key est inexistante ou incorrecte"
 		}
 
