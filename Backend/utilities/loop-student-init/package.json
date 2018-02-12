@@ -1,0 +1,11 @@
+{
+  "name": "loop-student-init",
+  "version": "1.0.0",
+  "description": "Loop all profiles to init new Students",
+  "main": "loop-student-init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mickael Gomez",
+  "license": "ISC"
+}

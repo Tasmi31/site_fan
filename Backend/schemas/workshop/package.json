@@ -1,0 +1,11 @@
+{
+  "name": "workshop",
+  "version": "1.0.0",
+  "description": "Schema & model of a workshop",
+  "main": "workshop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mickael Gomez",
+  "license": "ISC"
+}
