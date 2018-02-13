@@ -1,5 +1,6 @@
 // --- Require
 	const Activity = require('./../../models/activity')
+	const suffleArray = require('./../shuffleArray')
 
 // --- Main
 
@@ -16,10 +17,11 @@ function loopWorkshopInit (docs)
 	workshops.forEach((atelier) =>
 	{
 		let workshop = new Activity(atelier)
+		workshop.buildSlug()
 		workshopsTab.push(workshop)
 	})
 
-	return workshopsTab
+	return suffleArray(workshopsTab)
 }
 	
 

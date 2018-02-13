@@ -1,5 +1,6 @@
 // --- Require
 	const Student = require('./../../models/student')
+	const suffleArray = require('./../shuffleArray')
 
 // --- Main
 
@@ -20,7 +21,7 @@ function loopStudentInit (profiles)
 		studentsTab.push(std)
 	})
 
-	return studentsTab
+	return suffleArray(studentsTab)
 }
 	
 

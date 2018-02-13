@@ -11,7 +11,7 @@
 
 	// --- Mongoose
 		const mongoose = require('mongoose')
-		mongoose.connect('mongodb://hiddenLogin:hiddenPassword@localhost/Fan')
+		mongoose.connect('mongodb://hiddenID:hiddenPassword@localhost/Fan')
 		mongoose.Promise = global.Promise
 
 	// --- Express
@@ -48,13 +48,13 @@
 	// --- Home route
 		router.get('/', (req,res) =>
 		{
-			res.json('API REST - FAN 2018 => Server up ! Développé par Mickael Gomez : gomezmickael@orange.fr')
+			res.json('API REST - FAN 2018 => Server up !')
 		})
 
 /* > = = = = = = = = = = = < [ S T U D E N T ] > = = = = = = = = = = = < */
 
 	// --- Vars
-		const doneURL = 'http://mickaelgomez.com/side-projects/fan/'
+		const doneURL = 'http://mickaelgomez.com/fan/'
 		const apikey = {
 			key: "hiddenApiKey",
 			error: "Erreur : L'api key est inexistante ou incorrecte"
@@ -202,7 +202,7 @@
 		})
 
 
-/* = = = = = >{ START }< = = = = = */
+/* = = = = = >{ START SERVER }< = = = = = */
 
 	// --- Server
 		let port = 80
